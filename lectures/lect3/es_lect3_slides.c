@@ -166,7 +166,7 @@ fclose(fp);
 char msg[] = "Hello";
 int len;
 len = strlen(msg); /* len=5 без символа \0*/
-len = sizeof("Hello"); /* len=6 вместе с \0 */
+len = sizeof(msg); /* len=6 вместе с \0 */
 
 char cmd[100];
 scanf("%s", cmd);
