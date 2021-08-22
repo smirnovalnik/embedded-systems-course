@@ -500,7 +500,7 @@
       </component>
     </components>
     <files>
-      <file attr="config" category="header" name="Config\MDR32F9Qx_config.h">
+      <file attr="config" category="header" name="Config\MDR32F9Qx_config.h" version="1.5">
         <instance index="0">RTE\Device\MDR1986BE92\MDR32F9Qx_config.h</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.5" condition="CON_MDR1986BE9x"/>
         <package name="MDR1986BExx" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="Keil" version="1.5.3"/>

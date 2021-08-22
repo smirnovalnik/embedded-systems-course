@@ -148,40 +148,7 @@
           <Name>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC8000 -FN1 -FF01986BE9x -FS08000000 -FL020000 -FP0($$Device:MDR1986BE92$Flash\1986BE9x.FLM))</Name>
         </SetRegEntry>
       </TargetDriverDllRegistry>
-      <Breakpoint>
-        <Bp>
-          <Number>0</Number>
-          <Type>0</Type>
-          <LineNumber>243</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134226796</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Dropbox\РњР­Р\РџСЂРµРїРѕРґР°РІР°С‚РµР»СЊСЃРєР°СЏ РґРµСЏС‚РµР»СЊРЅРѕСЃС‚СЊ\РћС‚Р»Р°РґРѕС‡РЅС‹Рµ СЃСЂРµРґСЃС‚РІР° РјРёРєСЂРѕРїСЂРѕС†РµСЃСЃРѕСЂРЅС‹С… СЃРёСЃС‚РµРј\embedded_systems_course\labs\lab3_ex\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\lab3_ex\main.c\243</Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
-          <LineNumber>214</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134226736</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Dropbox\РњР­Р\РџСЂРµРїРѕРґР°РІР°С‚РµР»СЊСЃРєР°СЏ РґРµСЏС‚РµР»СЊРЅРѕСЃС‚СЊ\РћС‚Р»Р°РґРѕС‡РЅС‹Рµ СЃСЂРµРґСЃС‚РІР° РјРёРєСЂРѕРїСЂРѕС†РµСЃСЃРѕСЂРЅС‹С… СЃРёСЃС‚РµРј\embedded_systems_course\labs\lab3_ex\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\lab3_ex\main.c\214</Expression>
-        </Bp>
-      </Breakpoint>
+      <Breakpoint/>
       <WatchWindow1>
         <Ww>
           <count>0</count>
@@ -246,7 +213,7 @@
 
   <Group>
     <GroupName>src</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
