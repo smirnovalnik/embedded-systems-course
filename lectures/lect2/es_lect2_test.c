@@ -21,7 +21,6 @@ void reverse(char a[], int n)
     return; /* Необязательно */
 }
 
-
 int main()
 {
     int h, m, s;
