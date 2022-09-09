@@ -36,9 +36,8 @@
 int arr_max(int* a, int len)
 {
     int max = a[0];
-    int i;
 
-    for (i = 0; i < len; i++)
+    for (int i = 1; i < len; i++)
         if (a[i] > max)
             max = a[i];
 

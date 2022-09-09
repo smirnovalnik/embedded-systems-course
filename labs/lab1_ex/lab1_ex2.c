@@ -52,8 +52,7 @@ bool is_strong_password(char* str)
     bool digit = false, upper = false, lower = false;
 
     /* Организуем цикл и проверяем каждый символ на соответствие условию */
-    int i;
-    for (i = 0; i < str_len; i++)
+    for (int i = 0; i < str_len; i++)
     {
         /* Данную проверку на цифру можно заменить функцией из стандартной
            библиотеки C.
