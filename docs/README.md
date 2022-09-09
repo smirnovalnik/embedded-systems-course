@@ -1,10 +1,10 @@
-# Документация К1986ВЕ92QI (MDR32F9Q2I)
+# Документация `К1986ВЕ92QI` (`MDR32F9Q2I`)
 
 В данной директории содержится документация на микроконтроллер
-К1986ВЕ92QI (MDR32F9Q2I) и отладочную плату 1986EvBrd_BE92Q.
+`К1986ВЕ92QI` (`MDR32F9Q2I`) и отладочную плату `1986EvBrd_BE92Q`.
 
 Документация и перечень найденных ошибок (errata) может обновляться.
-Последняя версия находится на [официальном сайте компании Миландр](http://ic.milandr.ru/products/mikrokontrollery_i_protsessory/32_razryadnye_mikrokontrollery/1986ve9kh_yadro_arm_cortex_m3/k1986ve92qi/).
+Последняя версия находится на [официальном сайте компании производителя](http://ic.milandr.ru/products/mikrokontrollery_i_protsessory/32_razryadnye_mikrokontrollery/1986ve9kh_yadro_arm_cortex_m3/k1986ve92qi/).
 
 Исходники документации на отладочную плату
 (принципиальная схема и конструкция печатной платы) хранятся в формате PCAD.
