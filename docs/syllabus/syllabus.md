@@ -31,19 +31,19 @@ Aleksandr Smirnov
 
 Email: [smirnovalnik@mpei.ru](mailto:smirnovalnik@mpei.ru)
 
-Labs are in the room E-101a.
+The laboratory is in the room E-101a.
 
 ## Course Description
 
 The course is created for first-year master's students of the Department of Industrial Electronics.
-The course introduces the use of the C language for embedded systems on the microcontroller unit `MDR32F9Q2I` and with the latest methods of development of embedded systems.
+The course introduces to the C programming language for embedded systems on the `MDR32F9Q2I` microcontroller unit and with the latest methods of development of embedded systems.
 
 ## Learning Objectives
 
 The objectives of this course are:
 
 - learning the C programming language and its application for embedded systems
-- introducing to the microcontroller unit `MDR32F9Q2I`
+- introducing to the `MDR32F9Q2I` microcontroller unit
 - learning the latest methods of development and debugging of embedded systems
 
 ## Prerequisites
@@ -79,7 +79,7 @@ The remaining lectures are not available.
 
 ### Labs
 
-Performing labs involves preliminary self-preparation:
+Performing laboratory work involves preliminary self-preparation:
 creating a project and writing the source code.
 
 Lab #1 is performed on a PC.
@@ -87,8 +87,7 @@ Instructions for running the compiler are in the `README.md` file in the `labs/l
 
 Labs #2, #3 and #4 are performed on the `1986EvBrd_BE92Q` evaluation board with the `MDR32F9Q2I` microcontroller unit.
 
-I/O is actively used via a serial asynchronous
-`UART` interface in labs #2, #3 and #4.
+Input/output is actively used via a serial asynchronous `UART` interface in labs #2, #3 and #4.
 
 ### Exam
 
@@ -131,12 +130,12 @@ git clone https://github.com/smirnovalnik/embedded-systems-course.git
   - `lab2_ex` - an example of lab #2 running on a microcontroller.
     The example shows the use of the C language and standard input/output
     on the microcontroller via the `UART` interface in the `Keil uVision` integrated development environment.
-  - `lab3_ex` - an example of lab #3, which studies a digital-to-analog converter
-    (`DAC`) and a direct memory access controller (`DMA`). The example generates
+  - `lab3_ex` - an example of lab #3, which studies digital-to-analog converter
+    (`DAC`) and direct memory access controller (`DMA`). The example generates
     arbitrary waveform at the output of the microcontroller unit
-  - `lab4_ex` - in lab #4, the study of the periphery continues
-    microcontroller (`ADC`, `SPI`, `timer`). An example of analog measurement is shown.
-    Signal from the input of the microcontroller is shown on a liquid crystal indicator
+  - `lab4_ex` - an example of lab #4, the study of the periphery continues
+    microcontroller (`ADC`, `SPI`, `Timer`). An example of analog measurement is shown.
+    Signal from the input of the microcontroller displays on a liquid crystal indicator
 - `lectures` - slides and source codes used in lectures
 - `programs` - programs to install
 
@@ -145,7 +144,7 @@ git clone https://github.com/smirnovalnik/embedded-systems-course.git
 - _Elicia White "Making Embedded Systems: Design Patterns for Great Software"_
 - _Joseph Yiu "The Definitive Guide to ARM® Cortex®-M3 and Cortex®-M4 Processors"_
 - If you want to program C language you must read and **solve all exercises** in the textbook
-_Kernighan B., Ritchie D. "The C Programming Language" 2nd edition._
+_Brian Kernighan, Dennis Ritchie "The C Programming Language" 2nd edition._
 
 ## Useful Links
 
@@ -204,7 +203,7 @@ For the labs of this course, this is more than enough.
 can be tested without the evaluation board. However, this simulator supports
 only the central processor unit, but not the peripheral modules of the microcontroller unit.
 
-`Keil MDK Lite Edition` initially knows nothing about `MDR32F9Q2I` microcontrollers.
+`Keil MDK Lite Edition` initially knows nothing about `MDR32F9Q2I` microcontroller.
 Therefore, you need to install the package
 `mdr_spl_v1.5.3.pack`.
 After installing this package, when creating a project, you can select
