@@ -1,5 +1,5 @@
 
-SRC_PREFIX=es_lect3_
+SRC_PREFIX=es_lect2_
 
 all:
 	@echo "choose target ex1 or ex2"
