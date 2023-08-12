@@ -56,8 +56,7 @@ int main(void)
             return 0;
         }
 
-        unsigned int i;
-        for (i = 1; i <= n; i++)
+        for (int i = 1; i <= n; i++)
         {
             /* Проверяем число на нечетность */
             if (i % 2 == 1)
