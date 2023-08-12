@@ -92,13 +92,13 @@ int main(void)
     for(;;)
     {
         /* Чтение символов из потока ввода и сохранение их в str_buf */
-        gets(str_buf);
+        scanf("%20s", str_buf);
 
         /* Печатаем строку "yes" или "no" в зависимости от результата работы
            функции is_strong_password */
         if (is_strong_password(str_buf) == true)
-            printf("yes\n");
+            printf("Strong password\n");
         else
-            printf("no\n");
+            printf("Weak password\n");
     }
 }
