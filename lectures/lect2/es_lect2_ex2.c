@@ -1,48 +1,32 @@
-/* Программа scat */
-
-#include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-int main(int argc, char* argv[])
+int cmp (const void * a, const void * b)
 {
-    // Проверка наличия параметра -n
-    int n = 0;
-    for (int i = 1; i < argc; i++)
-    {
-        if (strcmp(argv[i], "-n") == 0)
-        {
-            n = 1;
-        }
-    }
+    return *(int*)a - *(int*)b;
+}
 
-    // Вывод содержимого файлов
-    FILE *fp;
-    for (int i = 1; i < argc; i++)
-    {
-        if (strcmp(argv[i], "-n") == 0)
-            continue;
-        if (argv[i][0] == '-')
-        {
-            printf("scat: %s: Invalid option\n", argv[i]);
-            break;
-        }
-        if ((fp = fopen(argv[i], "r")) == NULL)
-        {
-            printf("scat: %s: No such file or directory\n", argv[i]);
-            continue;
-        }
-        char buf[100];
-        int j = 1;
-        while (fgets(buf, sizeof(buf), fp))
-        {
-            if (n)
-                printf("%d %s", j, buf);
-            else
-                printf("%s", buf);
-            j++;
-        }
-        fclose(fp);
-    }
+int main ()
+{
+    int test[] = {88, 56, 100, 2, 25};
+    int len = sizeof(test)/sizeof(int);
+
+    for(int i = 0; i < len; i++)
+       printf("%d ", test[i]);
+    printf("\n");
+
+    qsort(test, len, sizeof(int), cmp);
+
+    for(int i = 0; i < len; i++)
+        printf("%d ", test[i]);
+    printf("\n");
+
+    int key = 56;
+    int* item = (int*)bsearch(&key, test, len, sizeof(int), cmp);
+    if (item != NULL)
+        printf("found\n");
+    else
+        printf("not be found\n");
 
     return 0;
 }
