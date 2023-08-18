@@ -21,5 +21,9 @@ ex4: $(SRC_PREFIX)ex4.c $(STARTUP)
 	$(CC) $^ $(CFLAGS) $(LFLAGS) -g -O0 -o $@.axf
 	$(OBJDUMB) -S --disassemble -d $@.axf > $@.S
 
+ex5: $(SRC_PREFIX)ex4.c
+	riscv-none-elf-gcc $^ -g -O0 -o $@.axf
+	riscv-none-elf-objdump -S --disassemble -d $@.axf > $@.S
+
 clean:
 	-rm *.exe *.axf *.map *.o *.S
