@@ -71,3 +71,18 @@ int swap32(int i)
 }
 
 __asm("WFI"); /* Выполнение одной команды */
+
+
+/* Перенаправление потоков ввода/вывода */
+
+int fputc(int c, FILE * stream)
+{
+    uart_write(c);
+    return c;
+}
+
+int fgetc(FILE * stream)
+{
+    char c = uart_read();
+    return c;
+}
