@@ -1,10 +1,11 @@
+.PHONY: clean all
 NAME=lab1
 CLEANUP = rm -fR
 MKDIR = mkdir -p
-TARGET_EXTENSION=.out
+TARGET_EXTENSION=
 CC=gcc
-CFLAGS=-Wall
-OUT_DIR=out
+CFLAGS=-Wall -std=c11 -pedantic -g
+BUILD_DIR=build
 
 ifeq ($(OS),Windows_NT)
 CLEANUP = del /q
@@ -14,23 +15,23 @@ endif
 
 all: ex1 ex2 ex3 ex4 ex5
 
-ex1: $(OUT_DIR)
-	$(CC) $(CFLAGS) $(NAME)_ex1.c -o $(OUT_DIR)/$(NAME)_ex1$(TARGET_EXTENSION)
+ex1: $(BUILD_DIR)
+	$(CC) $(CFLAGS) $(NAME)_ex1.c -o $(BUILD_DIR)/$(NAME)_ex1$(TARGET_EXTENSION)
 
-ex2: $(OUT_DIR)
-	$(CC) $(CFLAGS) $(NAME)_ex2.c -o $(OUT_DIR)/$(NAME)_ex2$(TARGET_EXTENSION)
+ex2: $(BUILD_DIR)
+	$(CC) $(CFLAGS) $(NAME)_ex2.c -o $(BUILD_DIR)/$(NAME)_ex2$(TARGET_EXTENSION)
 
-ex3: $(OUT_DIR)
-	$(CC) $(CFLAGS) $(NAME)_ex3.c -o $(OUT_DIR)/$(NAME)_ex3$(TARGET_EXTENSION)
+ex3: $(BUILD_DIR)
+	$(CC) $(CFLAGS) $(NAME)_ex3.c -o $(BUILD_DIR)/$(NAME)_ex3$(TARGET_EXTENSION)
 
-ex4: $(OUT_DIR)
-	$(CC) $(CFLAGS) $(NAME)_ex4.c -o $(OUT_DIR)/$(NAME)_ex4$(TARGET_EXTENSION)
+ex4: $(BUILD_DIR)
+	$(CC) $(CFLAGS) $(NAME)_ex4.c -o $(BUILD_DIR)/$(NAME)_ex4$(TARGET_EXTENSION)
 
-ex5: $(OUT_DIR)
-	$(CC) $(CFLAGS) $(NAME)_ex5.c -o $(OUT_DIR)/$(NAME)_ex5$(TARGET_EXTENSION)
+ex5: $(BUILD_DIR)
+	$(CC) $(CFLAGS) $(NAME)_ex5.c -o $(BUILD_DIR)/$(NAME)_ex5$(TARGET_EXTENSION)
 
 clean:
-	-@$(CLEANUP) $(OUT_DIR)
+	-@$(CLEANUP) $(BUILD_DIR)
 
-$(OUT_DIR):
+$(BUILD_DIR):
 	-@$(MKDIR) $@
