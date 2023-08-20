@@ -1,9 +1,14 @@
 
+SRC_PREFIX=es_lect1_
+
+BUILD_DIR=build
+
 all:
 	@echo "choose target ex1"
 
-ex1: es_lect1_ex1.c
-	gcc es_lect1_ex1.c -o ex1
+ex1: $(SRC_PREFIX)ex1.c
+	-mkdir -p $(BUILD_DIR)
+	gcc $(SRC_PREFIX)ex1.c -o $(BUILD_DIR)/ex1
 
 clean:
-	-rm *.exe *.axf *.map *.o
+	-rm -rf $(BUILD_DIR)

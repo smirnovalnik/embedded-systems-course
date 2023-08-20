@@ -11,3 +11,4 @@ out
 JLinkLog.txt
 .vscode
 .DS_Store
+build

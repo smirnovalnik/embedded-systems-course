@@ -5,7 +5,7 @@
 
 int main(int argc, char* argv[])
 {
-    // Проверка наличия параметра -n
+    /* Проверка наличия параметра -n */
     int n = 0;
     for (int i = 1; i < argc; i++)
     {
@@ -15,8 +15,8 @@ int main(int argc, char* argv[])
         }
     }
 
-    // Вывод содержимого файлов
-    FILE *fp;
+    /* Вывод содержимого файлов */
+    FILE *fd;
     for (int i = 1; i < argc; i++)
     {
         if (strcmp(argv[i], "-n") == 0)
@@ -26,14 +26,14 @@ int main(int argc, char* argv[])
             printf("scat: %s: Invalid option\n", argv[i]);
             break;
         }
-        if ((fp = fopen(argv[i], "r")) == NULL)
+        if ((fd = fopen(argv[i], "r")) == NULL)
         {
             printf("scat: %s: No such file or directory\n", argv[i]);
             continue;
         }
         char buf[100];
         int j = 1;
-        while (fgets(buf, sizeof(buf), fp))
+        while (fgets(buf, sizeof(buf), fd))
         {
             if (n)
                 printf("%d %s", j, buf);
@@ -41,7 +41,7 @@ int main(int argc, char* argv[])
                 printf("%s", buf);
             j++;
         }
-        fclose(fp);
+        fclose(fd);
     }
 
     return 0;

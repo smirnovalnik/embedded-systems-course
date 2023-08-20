@@ -1,17 +1,22 @@
 
 SRC_PREFIX=es_lect2_
 
+BUILD_DIR=build
+
 all:
 	@echo "choose target ex1, ex2 or ex3"
 
 ex1: $(SRC_PREFIX)ex1.c
-	gcc $(SRC_PREFIX)ex1.c -o ex1
+	-mkdir -p $(BUILD_DIR)
+	gcc $(SRC_PREFIX)ex1.c -o $(BUILD_DIR)/ex1
 
 ex2: $(SRC_PREFIX)ex2.c
-	gcc $(SRC_PREFIX)ex2.c -o ex2
+	-mkdir -p $(BUILD_DIR)
+	gcc $(SRC_PREFIX)ex2.c -o $(BUILD_DIR)/ex2
 
 ex3: $(SRC_PREFIX)ex3.c
-	gcc $(SRC_PREFIX)ex3.c -o ex3
+	-mkdir -p $(BUILD_DIR)
+	gcc $(SRC_PREFIX)ex3.c -o $(BUILD_DIR)/scat
 
 clean:
-	-rm *.exe *.axf *.map *.o *.S
+	-rm -rf $(BUILD_DIR)
