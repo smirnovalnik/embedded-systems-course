@@ -261,7 +261,7 @@ int main(void)
     /* Режим однократного преобразования */
     ADCx_InitStr.ADC_SamplingMode     = ADC_SAMPLING_MODE_SINGLE_CONV;
     ADCx_InitStr.ADC_ChannelSwitching = ADC_CH_SWITCHING_Disable;
-    ADCx_InitStr.ADC_ChannelNumber    = ADC_CH_ADC7; /*Номер канала*/
+    ADCx_InitStr.ADC_ChannelNumber    = ADC_CH_ADC7; /* Номер канала */
     ADCx_InitStr.ADC_Channels         = 0;
     ADCx_InitStr.ADC_LevelControl     = ADC_LEVEL_CONTROL_Disable;
     ADCx_InitStr.ADC_LowLevel         = 0;
