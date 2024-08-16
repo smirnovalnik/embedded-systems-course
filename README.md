@@ -144,6 +144,7 @@ git clone https://github.com/smirnovalnik/embedded-systems-course.git
 
 ## Литература
 
+- _Лакамера Даниэле Архитектура встраиваемых систем_
 - _Elicia White "Making Embedded Systems: Design Patterns for Great Software"_
 - _Joseph Yiu "The Definitive Guide to ARM® Cortex®-M3 and Cortex®-M4 Processors"_
 - Для обучения программированию на языке C обязательна к прочтению и **решению всех упражнений** книга
